@@ -1,0 +1,67 @@
+.travelers-card {
+  background: $basic_white;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.16));
+  padding: 0 0 20px 0;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.travelers-card__image {
+}
+
+.travelers-card__description {
+  padding: 25px 0 0 0;
+}
+
+.travelers-card__img {
+  width: 100%;
+}
+
+.travelers-card__title {
+  width: 200px;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+.travelers-card__text {
+  width: 200px;
+  margin: 0 auto 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-align: center;
+}
+
+
+.travelers-card__title::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  left: 12px;
+  border-radius: 50%;
+  background: #F97676;
+}
+
+.travelers-card__title--online::before {
+  background-color: #81E31E;
+}
+
+.travelers-card__icons {
+  width: 140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travelers-card__icon {
+  margin: 0 14px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}

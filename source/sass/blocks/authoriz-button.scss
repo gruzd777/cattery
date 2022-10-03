@@ -1,0 +1,19 @@
+.authoriz-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  background: $basic_yellow;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: #161C35;
+}
+
+.authoriz-button--flex {
+  padding: 5px 0;
+  flex-grow: 1;
+  z-index: 1;
+}

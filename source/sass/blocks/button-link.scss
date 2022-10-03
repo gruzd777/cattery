@@ -1,0 +1,21 @@
+.button-link {
+  position: relative;
+  display: block;
+  padding: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic_blue_light;
+  background: $basic_yellow;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 11px;
+    width: 14px;
+    height: 14px;
+    background: url("../../img/line.svg") no-repeat;
+  }
+}

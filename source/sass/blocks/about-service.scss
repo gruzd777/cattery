@@ -1,0 +1,34 @@
+.about-service {
+  padding: 33px 25px 82px 50px;
+  background: #192144 url('../../img/about-mobile.png') no-repeat top center;
+  border-radius: 0 0 30px 30px;
+}
+
+.about-service__title {
+  width: 110px;
+}
+
+.about-service__text {
+  width: 210px;
+  margin: 20px 0 0 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic_white;
+}
+
+.about-service__text--big {
+  margin: 19px 0 0 0;
+  font-weight: 700;
+}
+
+.about-service__button-link {
+  display: none;
+}
+
+@media (min-width: 321px) {
+  .about-service__text {
+    width: auto;
+  }
+}

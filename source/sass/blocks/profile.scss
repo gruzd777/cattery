@@ -1,0 +1,112 @@
+.profile {
+  position: relative;
+  padding: 40px 0 38px 49px;
+  border-radius: 0 0 30px 30px;
+  background: #E6E8F1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 40px;
+    background: url("../../img/rates.png") no-repeat 0 0;
+  }
+}
+
+.profile__title {
+  width: 110px;
+  margin: 0 0 60px 0;
+}
+
+.profile__group-1 {
+
+}
+
+.profile__group-2 {
+
+}
+
+.profile__list {
+  margin: 0 0 31px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile__item {
+  position: relative;
+  padding: 10px 0 15px 0;
+  border-top: 1px solid #E1E3E9;
+
+  &::after {
+    content: "0";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic_white;
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $special_grey;
+  }
+}
+
+.profile__item:last-child {
+  border-bottom: 1px solid #E1E3E9;
+}
+
+.profile__item--first::after {
+  content: "1";
+  background: $special_orange;
+}
+
+.profile__item--second::after {
+  content: "2";
+  background: $special_yellow_dark;
+}
+
+.profile__item--third::after {
+  content: "3";
+  background: $basic_yellow;
+}
+
+.profile__text {
+  margin: 0;
+  max-width: 200px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_grey;
+}
+
+.profile__text--price {
+
+}
+
+.profile__group-3 {
+
+}
+
+.profile__button {
+  font-family: "Blogger Sans","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  outline: 0;
+  background: 0 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #132576;
+  cursor: pointer;
+}

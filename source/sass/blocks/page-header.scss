@@ -1,0 +1,19 @@
+.page-header {
+  min-height: 73px;
+}
+
+.page-header--hide {
+  background: $basic_blue;
+}
+
+.page-header--show {
+  background: $basic_white;
+}
+
+.page-header__logo {
+  padding: 18px 0 0 0;
+}
+
+.page-header__user-nav {
+  margin: 0 0 65px;
+}
