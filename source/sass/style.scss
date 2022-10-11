@@ -1,30 +1,3 @@
-// global
-@import "./global/variables.scss";
-@import "./global/fonts.scss";
-@import "./global/global.scss";
-@import "./global/container.scss";
-@import "./global/visually-hidden.scss";
-
-// blocks
-@import "./blocks/page.scss";
-@import "./blocks/button-link.scss";
-@import "./blocks/page-body.scss";
-@import "./blocks/page-header.scss";
-@import "./blocks/authoriz-button.scss";
-
-@import "./blocks/menu.scss";
-@import "./blocks/contacts-block.scss";
-@import "./blocks/social.scss";
-@import "./blocks/page-main.scss";
-@import "./blocks/promo.scss";
-@import "./blocks/about-service.scss";
-@import "./blocks/title.scss";
-@import "./blocks/directions.scss";
-@import "./blocks/card.scss";
-@import "./blocks/title-3.scss";
-@import "./blocks/travelers.scss";
-@import "./blocks/travelers-card.scss";
-@import "./blocks/profile.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/page-footer.scss";
-
+h1 {
+  color: red;
+}
