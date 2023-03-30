@@ -1,0 +1,15 @@
+.seemore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  border: 0.5px solid $basic_gold;
+  margin: 0 auto;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $basic_white;
+  padding: 15px 18px;
+  cursor: pointer;
+}

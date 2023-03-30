@@ -1,7 +1,7 @@
 {
-  "name": "pognaly",
+  "name": "Cattery",
   "private": true,
-  "description": "Учебный проект Погнали",
+  "description": "Сайт кошачьего питомника",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -10,7 +10,7 @@
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-libsquoosh": "^1.1.2",
+    "gulp-libsquoosh": "^1.0.12",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "^2.0.0",
@@ -47,5 +47,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

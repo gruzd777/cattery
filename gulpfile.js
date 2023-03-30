@@ -18,7 +18,11 @@ import browser from 'browser-sync';
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(
+      {
+        includePaths: ['./node_modules'],
+      }
+    ).on('error', sass.logError))
     .pipe(gulp.dest('build/css'))
     .pipe(postcss([
       autoprefixer(),
@@ -34,7 +38,6 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -163,9 +166,9 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
-    // svg,
-    // sprite,
+    scripts,
+    svg,
+    sprite,
     createWebp
   ),
   gulp.series(

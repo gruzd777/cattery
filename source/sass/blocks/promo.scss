@@ -1,0 +1,37 @@
+.promo {
+  min-height: 540px;
+  box-sizing: border-box;
+}
+
+.promo__city {
+  width: 90px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.promo__title {
+  width: 235px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: $basic_white;
+}
+.promo__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  margin: 0 auto 40px;
+  width: 230px;
+}
+.promo__button {
+
+}
+.seemore {
+
+}
