@@ -1,0 +1,50 @@
+.slider {
+  position: relative;
+}
+
+.slider__list {
+  margin: 0 0 45px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__img {
+
+}
+
+.slider__button {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  width: 9px;
+  height: 18px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button--prev {
+  background-image: url('../../img/arrowPrev.svg');
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.slider__button--next {
+  background-image: url('../../img/arrowNext.svg');
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}

@@ -10,6 +10,24 @@
   font-size: 12px;
   line-height: 14px;
   color: $basic_white;
-  padding: 15px 18px;
+  padding: 13px 18px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic_gold;
+    border: 0.5px solid $basic_black;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 18px 38px;
+  }
 }
+
+

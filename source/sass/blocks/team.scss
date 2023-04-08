@@ -1,0 +1,129 @@
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team__title {
+  max-width: 250px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.team__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0 auto 103px;
+  max-width: 255px;
+  text-align: center;
+}
+
+.team__slider {
+  position: relative;
+}
+
+.team__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team__slider-item {
+  position: relative;
+  background-color: $light_back;
+  display: none;
+  padding: 88px 11px 16px 11px;
+  box-sizing: border-box;
+}
+
+.team__slider-item--active {
+  display: block;
+}
+
+.team__slider-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team__slider-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $basic_gold;
+  max-width: 125px;
+  margin: 0 auto 12px;
+}
+
+.team__slider-prof {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135.94%;
+  margin: 0 auto 25px;
+  max-width: 155px;
+  text-align: center;
+}
+
+.team__slider-desk {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  max-width: 350px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.team__social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.team__social-item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__social-link {
+
+}
+
+.team__social-icon {
+  
+}
+
+.team__slider-button {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.team__slider-button--prev {
+  background-image: url('../img/arrowPrev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -16px;
+  left: 15%;
+}
+
+.team__slider-button--next {
+  background-image: url('../img/arrowNext.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -16px;
+  right: 15%;
+}

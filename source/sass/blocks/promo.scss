@@ -1,6 +1,5 @@
 .promo {
-  min-height: 540px;
-  box-sizing: border-box;
+
 }
 
 .promo__city {
@@ -18,9 +17,10 @@
   font-family: 'Yeseva One';
   font-weight: 400;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 33px;
   color: $basic_white;
 }
+
 .promo__subtitle {
   font-weight: 400;
   font-size: 14px;
@@ -29,9 +29,34 @@
   margin: 0 auto 40px;
   width: 230px;
 }
-.promo__button {
 
-}
-.seemore {
+@media (min-width: $tablet) {
+  .promo__city {
+    max-width: 300px;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
+  .promo__title {
+    width: 380px;
+    text-align: left;
+    margin: 0 0 30px 0;
+    font-family: 'Yeseva One';
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .promo__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0 0 60px 0;
+    width: 330px;
+  }
+
+  .promo__button.seemore {
+    margin: 0 0 60px 0;
+  }
 }
+

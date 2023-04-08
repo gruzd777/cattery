@@ -1,0 +1,13 @@
+.title-2 {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: $basic_white;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

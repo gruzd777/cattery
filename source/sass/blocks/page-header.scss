@@ -1,6 +1,38 @@
 .page-header {
+  padding-top: 27px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  background-color: $dark_back;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 27px 0;
+  flex-direction: column;
+  min-height: 617px;
+  height: 100vh;
+  box-sizing: border-box;
+
+  background-image: url('../img/cat-promo-mobile.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  @media (min-width: $tablet) {
+    background-image: url('../img/cat-promo-tablet.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+
+.page-header__logo-link {
+  align-self: center;
+  margin-bottom: 57px;
+}
+
+.page-header__logo-link img {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    height: auto;
+    min-height: 100%;
+  }
 }

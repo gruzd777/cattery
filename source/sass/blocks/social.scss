@@ -1,0 +1,21 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  align-items: center;
+  width: 58px;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    display: flex;
+  }
+}

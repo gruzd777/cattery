@@ -1,0 +1,74 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $light_back;
+  background-image: url('../img/careCat.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/careCat@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.about__title {
+  width: 228px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.about__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__item {
+  margin-bottom: 30px;
+  border: 0.5px solid $basic_gold;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__link {
+  position: relative;
+  display: block;
+  padding: 25px 54px 25px 25px;
+  box-sizing: border-box;
+
+  &::after {
+    content:'';
+    position: absolute;
+    width: 46px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: $basic_gold;
+    background-image: url('../img/arrowNextWhite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.about__subtitle {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $basic_gold;
+}
+
+.about__text {
+  margin: 0;
+  max-width: 300px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: $basic_white;
+}
