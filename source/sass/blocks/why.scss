@@ -72,10 +72,6 @@
   z-index: 5;
 }
 
-.why__icon--medicine {
-
-}
-
 .why__description {
   margin: 0;
   font-weight: 300;
@@ -88,7 +84,30 @@
   z-index: 5;
 }
 
-.why__icon--consalting {
-}
-.why__icon--individual {
+
+@media (min-width: $tablet) {
+  .why {
+    padding-top: 84px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .why__title {
+    width: 390px;
+    margin-bottom: 23px;
+  }
+
+  .why__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    width: 428px;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .why__item {
+    width: 360px;
+    margin: 0 auto 40px;
+  }
 }

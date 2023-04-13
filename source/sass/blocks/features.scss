@@ -42,15 +42,15 @@
   background-color: $dark_back;
 }
 
-.features__img {
-
-}
-
 .features__list {
   margin: 0 auto;
   max-width: 350px;
   padding: 0;
   list-style: none;
+}
+
+.features__list-tablet {
+  display: none;
 }
 
 .features__item {
@@ -75,5 +75,134 @@
     border-radius: 50%;
     top: 5px;
     left: -15px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .features {
+    padding-top: 100px;
+  }
+
+  .features__title {
+    width: 400px;
+    margin-bottom: 25px;
+  }
+
+  .features__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    width: 450px;
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .features__cat-container {
+    position: relative;
+    width: 424px;
+    height: 424px;
+  }
+
+  .features__cat-container-2 {
+    width: 85%;
+    height: 85%;
+  }
+
+  .features__list {
+    display: none;
+  }
+
+  .features__list-tablet {
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 0;
+    list-style: none;
+
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .features__item-tablet {
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    color: $basic_white;
+    margin: 0;
+    line-height: 21px;
+  }
+
+  .features__item-tablet--first {
+    top: -10px;
+    left: -283px;
+    width: 170px;
+    text-align: right;
+
+    &::after {
+      content:'';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_gold;
+      border-radius: 50%;
+      top: 5px;
+      left: 193px;
+    }
+  }
+
+  .features__item-tablet--second {
+    top: 15px;
+    left: 320px;
+    width: 130px;
+
+    &::before {
+      content:'';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_gold;
+      border-radius: 50%;
+      top: 5px;
+      left: -26px;
+    }
+  }
+
+  .features__item-tablet--third {
+    bottom: -79px;
+    left: 283px;
+    width: 110px;
+
+    &::before {
+      content:'';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_gold;
+      border-radius: 50%;
+      top: 5px;
+      left: -15px;
+    }
+  }
+
+  .features__item-tablet--fourth {
+    width: 140px;
+    bottom: -38px;
+    left: -255px;
+    text-align: right;
+
+    &::after {
+      content:'';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_gold;
+      border-radius: 50%;
+      top: 5px;
+      left: 156px;
+    }
   }
 }

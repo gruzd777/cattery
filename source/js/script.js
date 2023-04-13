@@ -4,7 +4,7 @@ let sectionPets = document.querySelector('.pets');
 promoButton.addEventListener('click', smoothScroll);
 
 function smoothScroll() {
-    sectionPets.scrollIntoView({ behavior: 'smooth' });
+    sectionPets.scrollIntoView({ behavior: 'smooth', block: 'end'});
 }
 
 let answersTextWrapper = Array.from(document.querySelectorAll('.answers__text-wrapper'));

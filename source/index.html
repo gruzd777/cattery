@@ -52,7 +52,7 @@
     <main class="page-main">
       <section class="pets container">
           <h2 class="pets__title title-2">Питомцы</h2>
-          <p class="pets__sublitle">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+          <p class="pets__subtitle">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
           <div class="pets__buttons">
             <button class="pets__button pets__button--active" type="button">Коты</button>
             <button class="pets__button" type="button">Кошки</button>
@@ -96,6 +96,12 @@
               <img class="features__img" src="./img/orange-cat-mobile.png" srcset="./img/orange-cat-mobile@2x.png 2x" alt="Рыжий Мейн-Кун">
             </picture>
           </div>
+          <ul class="features__list-tablet">
+            <li class="features__item-tablet features__item-tablet--first">Легко уживается в семьях с детьми или другими животными</li>
+            <li class="features__item-tablet features__item-tablet--second">Выполняет команды как дрессированная собака</li>
+            <li class="features__item-tablet features__item-tablet--third">Вес может достигать 12 кг, а длина 1 м</li>
+            <li class="features__item-tablet features__item-tablet--fourth">Внешний вид этой кошки похож на дикую рысь</li>
+          </ul>
         </div>
         <ul class="features__list">
           <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
@@ -163,7 +169,14 @@
           <div class="team__slider">
             <ul class="team__slider-list">
               <li class="team__slider-item team__slider-item--active">
-                <img class="team__slider-img" src="./img/foto-mobile.png" alt="Фото Сергея Попова">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/foto-desktop.webp 1x, ./img/foto-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/foto-tablet.webp 1x, ./img/foto-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/foto-mobile.webp 1x, ./img/foto-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/foto-desktop.png 1x, ./img/foto-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/foto-tablet.png 1x, ./img/foto-tablet@2x.png 2x">
+                  <img class="team__slider-img" src="./img/foto-mobile.png" srcset="./img/foto-mobile@2x.png 2x" alt="Член команды">
+                </picture>
                 <p class="team__slider-title">Серёжа Попов</p>
                 <p class="team__slider-prof">Основатель питомника</p>
                 <p class="team__slider-desk">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного Вами питомца</p>
@@ -192,7 +205,14 @@
                 </ul>
               </li>
               <li class="team__slider-item">
-                <img class="team__slider-img" src="./img/foto-mobile.png" alt="Фото Сергея Попова">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/foto-desktop.webp 1x, ./img/foto-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/foto-tablet.webp 1x, ./img/foto-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/foto-mobile.webp 1x, ./img/foto-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/foto-desktop.png 1x, ./img/foto-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/foto-tablet.png 1x, ./img/foto-tablet@2x.png 2x">
+                  <img class="team__slider-img" src="./img/foto-mobile.png" srcset="./img/foto-mobile@2x.png 2x" alt="Член команды">
+                </picture>
                 <p class="team__slider-title">(Второй слайд) Серёжа Попов</p>
                 <p class="team__slider-prof">Основатель питомника</p>
                 <p class="team__slider-desk">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
@@ -221,7 +241,14 @@
                 </ul>
               </li>
               <li class="team__slider-item">
-                <img class="team__slider-img" src="./img/foto-mobile.png" alt="Фото Сергея Попова">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/foto-desktop.webp 1x, ./img/foto-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/foto-tablet.webp 1x, ./img/foto-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/foto-mobile.webp 1x, ./img/foto-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/foto-desktop.png 1x, ./img/foto-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/foto-tablet.png 1x, ./img/foto-tablet@2x.png 2x">
+                  <img class="team__slider-img" src="./img/foto-mobile.png" srcset="./img/foto-mobile@2x.png 2x" alt="Член команды">
+                </picture>
                 <p class="team__slider-title">(Третий слайд) Серёжа Попов</p>
                 <p class="team__slider-prof">Основатель питомника</p>
                 <p class="team__slider-desk">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>

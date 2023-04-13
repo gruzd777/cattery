@@ -66,9 +66,47 @@
 
 .about__text {
   margin: 0;
-  max-width: 300px;
+  max-width: 400px;
   font-weight: 300;
   font-size: 14px;
   line-height: 140%;
   color: $basic_white;
+}
+
+@media (min-width: $tablet) {
+  .about {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about__title {
+    width: 465px;
+  }
+
+  .about__title br {
+    display: none;
+  }
+
+  .about__item {
+    min-width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto 23px;
+  }
+
+  .about__link {
+    padding: 40px 100px 40px 50px;
+  }
+
+  .about__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .about__text {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 23px;
+  }
 }

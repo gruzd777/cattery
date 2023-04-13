@@ -48,3 +48,23 @@
   transform: translateY(-50%);
   right: 0;
 }
+
+@media (min-width: $tablet) {
+  .slider__button {
+    width: 16px;
+    height: 30px;
+  }
+
+  .slider__button--prev {
+    background-image: url('../../img/arrowPrevTablet.svg');
+
+  }
+
+  .slider__button--next {
+    background-image: url('../../img/arrowNextTablet.svg');;
+  }
+
+  .slider__list {
+    margin-bottom: 30px;
+  }
+}

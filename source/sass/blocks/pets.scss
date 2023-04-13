@@ -8,7 +8,7 @@
   margin: 0 auto 32px;
 }
 
-.pets__sublitle {
+.pets__subtitle {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -45,24 +45,27 @@
   color: $basic_white;
 }
 
-.slider {
+@media (min-width: $tablet) {
+  .pets {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-}
-.slider__list {
+  .pets__title {
+    width: 180px;
+    margin-bottom: 23px;
+  }
 
-}
-.slider__item {
+  .pets__subtitle {
+    width: 516px;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+  }
 
-}
-.slider__img {
-
-}
-.slider__button {
-
-}
-.slider__button--prev {
-
-}
-.slider__button--next {
-
+  .pets__button {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
