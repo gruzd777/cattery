@@ -30,17 +30,11 @@
   display: block;
 }
 
-.reviews__picture-wrapper {
+.reviews__img {
   position: absolute;
-  width: 242px;
-  height: 166px;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.reviews__img {
-
 }
 
 .reviews__slider-name {
@@ -107,12 +101,6 @@
   height: 100%;
 }
 
-.social__icon {
-
-}
-
-.social__icon--tw {
-}
 .reviews__slider-button {
   position: absolute;
   width: 20px;
@@ -121,19 +109,65 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .reviews__slider-button--prev {
   background-image: url('../img/arrowPrev.svg');
   background-repeat: no-repeat;
   background-position: center;
-  top: 50%;
-  left: -25px;
-  transform: translateY(-50%);
+  top: -16px;
+  left: 0;
 }
+
 .reviews__slider-button--next {
   background-image: url('../img/arrowNext.svg');
   background-repeat: no-repeat;
   background-position: center;
-  top: 50%;
-  right: -25px;
-  transform: translateY(-50%);
+  top: -16px;
+  right: 0;
+}
+
+@media (min-width: $tablet) {
+  .reviews {
+    padding: 0 40px 90px;
+  }
+
+  .reviews__title {
+    width: 155px;
+    margin: 0 auto 150px;
+  }
+
+  .reviews__slider-item {
+    padding: 148px 30px 40px;
+  }
+
+  .reviews__slider-name {
+    width: 225px;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto 20px;
+  }
+
+  .reviews__slider-desk {
+    font-size: 14px;
+    line-height: 23px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto 35px;
+  }
+
+  .reviews__slider-button--prev {
+    background-image: url('../../img/ArrowPrevLineTablet.svg');
+    width: 60px;
+    height: 16px;
+    top: 40px;
+    left: 45px;
+  }
+
+  .reviews__slider-button--next {
+    background-image: url('../../img/ArrowNextLineTablet.svg');
+    width: 60px;
+    height: 16px;
+    top: 40px;
+    right: 45px;
+  }
 }

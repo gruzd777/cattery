@@ -107,7 +107,7 @@
   }
 
   .why__item {
-    width: 360px;
+    width: clamp(360px, 70%, 600px);
     margin: 0 auto 40px;
   }
 }
