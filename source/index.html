@@ -17,8 +17,7 @@
       <a class="page-header__logo-link">
         <img src="./img/logo-icon.svg" width="50" height="22" alt="Логотип питомника Мейн-Кунов">
       </a>
-      <section class="promo">
-        <div class="container">
+      <section class="promo container">
           <p class="promo__city">Новосибирск</p>
           <h1 class="promo__title">Питомник Мейн-Кунов</h1>
           <p class="promo__subtitle">Первый питомник с расширенным спектром услуг</p>
@@ -46,11 +45,11 @@
               </a>
             </li>
           </ul>
-        </div>
       </section>
     </header>
     <main class="page-main">
-      <section class="pets container">
+      <section class="pets">
+        <div class="container">
           <h2 class="pets__title title-2">Питомцы</h2>
           <p class="pets__subtitle">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
           <div class="pets__buttons">
@@ -60,55 +59,72 @@
           </div>
           <div class="slider">
             <ul class="slider__list">
-              <li class="slider__item slider__item--current">
+              <li class="slider__item slider__item--first slider__item--current">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/pets-cat-desktop.webp 1x, ./img/pets-cat-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/cat-1-desktop.webp 1x, ./img/cat-1-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/pets-cat-tablet.webp 1x, ./img/pets-cat-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="./img/pets-cat-desktop.png 1x, ./img/pets-cat-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/pets-cat-tablet.png 1x, ./img/pets-cat-tablet@2x 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/cat-1-desktop.jpg 1x, ./img/cat-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/pets-cat-tablet.png 1x, ./img/pets-cat-tablet@2x.png 2x">
                   <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
                 </picture>
               </li>
-              <li class="slider__item">
-                <img class="slider__img" src="#" alt="">
+              <li class="slider__item slider__item--second">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/cat-2-desktop.webp 1x, ./img/cat-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-2-tablet.webp 1x, ./img/cat-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/cat-2-desktop.jpg 1x, ./img/cat-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/cat-2-tablet.jpg 1x, ./img/cat-2-tablet@2x.jpg 2x">
+                  <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
+                </picture>
               </li>
-              <li class="slider__item">
-                <img class="slider__img" src="#" alt="">
+              <li class="slider__item slider__item--third">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/cat-3-desktop.webp 1x, ./img/cat-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-3-tablet.webp 1x, ./img/cat-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/cat-3-desktop.jpg 1x, ./img/cat-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/cat-3-tablet.jpg 1x, ./img/cat-3-tablet@2x.jpg 2x">
+                  <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
+                </picture>
               </li>
             </ul>
             <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
             <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
           </div>
           <button class="pets__btn seemore">Смотреть больше</button>
+        </div>
       </section>
-      <section class="features container">
-        <h2 class="features__title title-2">Особенности породы</h2>
-        <p class="features__subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
-        <div class="features__cat-container">
-          <div class="features__cat-container-2">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/orange-cat-desktop.webp 1x, ./img/orange-cat-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/orange-cat-tablet.webp 1x, ./img/orange-cat-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/orange-cat-mobile.webp 1x, ./img/orange-cat-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="./img/orange-cat-desktop.png 1x, ./img/orange-cat-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/orange-cat-tablet.png 1x, ./img/orange-cat-tablet@2x 2x">
-              <img class="features__img" src="./img/orange-cat-mobile.png" srcset="./img/orange-cat-mobile@2x.png 2x" alt="Рыжий Мейн-Кун">
-            </picture>
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title title-2">Особенности породы</h2>
+          <p class="features__subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
+          <div class="features__cat-container">
+            <div class="features__cat-container-2">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/orange-cat-desktop.webp 1x, ./img/orange-cat-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/orange-cat-tablet.webp 1x, ./img/orange-cat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/orange-cat-mobile.webp 1x, ./img/orange-cat-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="./img/orange-cat-desktop.png 1x, ./img/orange-cat-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/orange-cat-tablet.png 1x, ./img/orange-cat-tablet@2x 2x">
+                <img class="features__img" src="./img/orange-cat-mobile.png" srcset="./img/orange-cat-mobile@2x.png 2x" alt="Рыжий Мейн-Кун">
+              </picture>
+            </div>
+            <ul class="features__list-tablet">
+              <li class="features__item-tablet features__item-tablet--first">Легко уживается в семьях с детьми или другими животными</li>
+              <li class="features__item-tablet features__item-tablet--second">Выполняет команды как дрессированная собака</li>
+              <li class="features__item-tablet features__item-tablet--third">Вес может достигать 12 кг, а длина 1 м</li>
+              <li class="features__item-tablet features__item-tablet--fourth">Внешний вид этой кошки похож на дикую рысь</li>
+            </ul>
           </div>
-          <ul class="features__list-tablet">
-            <li class="features__item-tablet features__item-tablet--first">Легко уживается в семьях с детьми или другими животными</li>
-            <li class="features__item-tablet features__item-tablet--second">Выполняет команды как дрессированная собака</li>
-            <li class="features__item-tablet features__item-tablet--third">Вес может достигать 12 кг, а длина 1 м</li>
-            <li class="features__item-tablet features__item-tablet--fourth">Внешний вид этой кошки похож на дикую рысь</li>
+          <ul class="features__list">
+            <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
+            <li class="features__item">Выполняет команды как дрессированная собака</li>
+            <li class="features__item">Вес может достигать 12 кг, а длина 1 м</li>
+            <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
           </ul>
         </div>
-        <ul class="features__list">
-          <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
-          <li class="features__item">Выполняет команды как дрессированная собака</li>
-          <li class="features__item">Вес может достигать 12 кг, а длина 1 м</li>
-          <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
-        </ul>
       </section>
       <section class="why container">
         <h2 class="why__title title-2">Почему именно мы?</h2>

@@ -50,6 +50,7 @@
     padding-top: 100px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 30px;
   }
 
   .pets__title {
@@ -67,5 +68,11 @@
   .pets__button {
     font-size: 18px;
     line-height: 21px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .pets {
+
   }
 }
