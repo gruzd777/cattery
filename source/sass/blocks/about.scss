@@ -79,6 +79,17 @@
     padding-bottom: 100px;
     padding-left: 100px;
     padding-right: 100px;
+    background-image: url('../img/careCatTablet.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/careCatTablet@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   .about__title {
@@ -108,5 +119,48 @@
     max-width: 500px;
     font-size: 14px;
     line-height: 23px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url('../img/careCatDesktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/careCatDesktop@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .about__list {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 560px;
+    margin: 0 40px 0 0;
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 40px;
+    }
+  }
+
+  .about__link {
+    padding-right: 70px;
+    height: 100%;
   }
 }

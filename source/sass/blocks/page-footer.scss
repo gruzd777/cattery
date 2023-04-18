@@ -71,6 +71,14 @@
   .page-footer__logo-link {
     display: none;
   }
+}
 
+@media (min-width: $desktop) {
+  .page-footer__logo-link {
+    display: block;
+  }
 
+  .page-footer__address {
+    margin: 0 0 30px 0;
+  }
 }

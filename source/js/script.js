@@ -8,7 +8,7 @@ function smoothScroll() {
 }
 
 let answersTextWrapper = Array.from(document.querySelectorAll('.answers__text-wrapper'));
-let answersList = document.querySelector('.answers__list');
+// let answersList = document.querySelector('.answers__list');
 let answersButtons = Array.from(document.querySelectorAll('.answers__btn'));
 
 
@@ -21,5 +21,3 @@ answersButtons.forEach((item, index) => {
     answersTextWrapper[index].classList.toggle('answers__text-wrapper--closed');
   })
 })
-
-

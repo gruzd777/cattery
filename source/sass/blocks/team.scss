@@ -214,3 +214,40 @@
     background-image: url('../img/arrowNextTablet.svg');
   }
 }
+
+@media (min-width: $desktop) {
+  .team {
+    padding: 80px 0px 215px;
+  }
+
+  .team__slider-item {
+    margin: 0 0 0 485px;
+    min-height: 356px;
+  }
+
+  .team__slider-img {
+    top: -25px;
+    left: -345px;
+    right: 0;
+    bottom: 0;
+    transform: none;
+  }
+
+  .team__slider-title {
+    width: 250px;
+  }
+
+  .team__slider-button--prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    bottom: 0;
+  }
+
+  .team__slider-button--next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    bottom: 0;
+  }
+}

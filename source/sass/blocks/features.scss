@@ -206,3 +206,9 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .features__subtitle {
+    width: 735px;
+  }
+}

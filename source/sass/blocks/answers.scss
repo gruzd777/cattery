@@ -166,3 +166,36 @@
     line-height: 154%;
   }
 }
+
+@media (min-width: $desktop) {
+  .answers {
+    padding-top: 70px;
+  }
+
+  .answers__title {
+    margin-bottom: 23px;
+  }
+
+  .answers__list {
+    width: 795px;
+    margin: 0 auto;
+  }
+
+  .answers__item::before {
+    font-size: 70px;
+    line-height: 82px;
+    left: -90px;
+  }
+
+  .answers__btn {
+    min-height: 110px;
+    padding: 21px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    border-right: 104px solid #a07b50;
+
+    &::before {
+      right: -61px;
+    }
+  }
+}
