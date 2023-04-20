@@ -44,7 +44,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/script.js')
     .pipe(gulp.dest('build/js'))
     .pipe(terser())
     .pipe(rename('script.min.js'))
@@ -101,7 +101,14 @@ const copy = (done) => {
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
+  gulp.src([
+    'source/normalize.min.css',
+    'source/splide.min.css',
+  ])
+    .pipe(gulp.dest('build/css'));
+  gulp.src('source/js/splide.min.js')
+    .pipe(gulp.dest('build/js'));
   done();
 }
 

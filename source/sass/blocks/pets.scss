@@ -45,6 +45,10 @@
   color: $basic_white;
 }
 
+.pets__btn {
+  margin-top: 30px;
+}
+
 @media (min-width: $tablet) {
   .pets {
     padding-top: 100px;

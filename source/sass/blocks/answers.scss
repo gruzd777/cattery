@@ -119,14 +119,15 @@
 
   .answers__list {
     counter-reset: counter;
-    width: 553px;
-    margin-left: auto;
+    min-width: 635px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 
   .answers__item {
     counter-increment: counter;
     position: relative;
+    margin-left: 90px;
 
     &::before {
       content: "0" counter(counter);

@@ -5,8 +5,33 @@
 
 .reviews__title {
   width: 120px;
-  margin: 0 auto 143px;
+  margin: 0 auto 20px;
   text-align: center;
+}
+
+.reviews__scroll {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 105px;
+  margin: 0 auto 40px;
+  color: rgba($color: $basic_white, $alpha: 0.5);
+  font-family: "Yeseva One";
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 17px;
+    height: 10px;
+    background: url("../img/arrow.svg") no-repeat;
+  }
 }
 
 .reviews__slider {
@@ -14,20 +39,26 @@
 }
 
 .reviews__slider-list {
-  padding: 0;
+  padding: 85px 0 0 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+  }
 }
 
 .reviews__slider-item {
-  display: none;
   position: relative;
   padding: 118px 30px 40px;
+  margin: 0 20px 0 0;
   background-color: $dark_back;
-}
 
-.reviews__slider-item--active {
-  display: block;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .reviews__img {
@@ -102,6 +133,7 @@
 }
 
 .reviews__slider-button {
+  display: none;
   position: absolute;
   width: 20px;
   height: 30px;
@@ -126,6 +158,10 @@
   right: 0;
 }
 
+.reviews__seemore {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .reviews {
     padding: 0 40px 90px;
@@ -133,7 +169,7 @@
 
   .reviews__title {
     width: 155px;
-    margin: 0 auto 150px;
+    margin: 0 auto 20px;
   }
 
   .reviews__slider-item {
@@ -174,16 +210,23 @@
 
 @media (min-width: $desktop) {
   .reviews__title {
-    margin: 0 auto 60px;
+    margin: 0 auto;
   }
 
+  .reviews__slider-list {
+    display: grid;
+  }
 
   .reviews__slider-item {
     box-sizing: border-box;
     padding: 100px 70px 100px 145px;
     width: 640px;
-    margin: 0 0 0 auto;
+    margin: 0 0 40px auto;
     min-height: 408px;
+
+    &:last-child {
+      margin: 0 0 0 auto;
+    }
   }
 
   .reviews__slider-name {
@@ -204,5 +247,16 @@
     top: 50%;
     transform: translateY(-50%);
     left: -60%;
+  }
+
+  .reviews__scroll {
+    display: none;
+  }
+
+  .reviews__seemore.seemore {
+    display: flex;
+    width: 200px;
+    margin-top: 20px;
+    box-sizing: border-box;
   }
 }

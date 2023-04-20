@@ -8,7 +8,6 @@ function smoothScroll() {
 }
 
 let answersTextWrapper = Array.from(document.querySelectorAll('.answers__text-wrapper'));
-// let answersList = document.querySelector('.answers__list');
 let answersButtons = Array.from(document.querySelectorAll('.answers__btn'));
 
 

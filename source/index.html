@@ -9,7 +9,8 @@
     <link rel="preload" href="./fonts/robotomedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/robotobold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Питомник Мейн-Кунов</title>
   </head>
@@ -58,7 +59,46 @@
             <button class="pets__button" type="button">Кошки</button>
             <button class="pets__button" type="button">Котята</button>
           </div>
-          <div class="slider">
+
+          <section class="splide" id="splide-gallary" aria-label="gallary">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1240px)" srcset="img/cat-1-desktop.webp 1x, ./img/cat-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pets-cat-tablet.webp 1x, ./img/pets-cat-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
+                    <source media="(min-width: 1240px)" srcset="./img/cat-1-desktop.jpg 1x, ./img/cat-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/pets-cat-tablet.png 1x, ./img/pets-cat-tablet@2x.png 2x">
+                    <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
+                  </picture>
+                </li>
+                <li class="splide__slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1240px)" srcset="img/cat-1-desktop.webp 1x, ./img/cat-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pets-cat-tablet.webp 1x, ./img/pets-cat-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
+                    <source media="(min-width: 1240px)" srcset="./img/cat-1-desktop.jpg 1x, ./img/cat-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/pets-cat-tablet.png 1x, ./img/pets-cat-tablet@2x.png 2x">
+                    <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
+                  </picture>
+                </li>
+                <li class="splide__slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1240px)" srcset="img/cat-1-desktop.webp 1x, ./img/cat-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pets-cat-tablet.webp 1x, ./img/pets-cat-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-cat-mobile.webp 1x, ./img/pets-cat-mobile@2x.webp 2x">
+                    <source media="(min-width: 1240px)" srcset="./img/cat-1-desktop.jpg 1x, ./img/cat-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/pets-cat-tablet.png 1x, ./img/pets-cat-tablet@2x.png 2x">
+                    <img class="slider__img" src="./img/pets-cat-mobile.png" srcset="./img/pets-cat-mobile@2x.png 2x" alt="Мейн-Кун">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+
+          <!-- <div class="slider">
             <ul class="slider__list">
               <li class="slider__item slider__item--first slider__item--current">
                 <picture>
@@ -93,7 +133,7 @@
             </ul>
             <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
             <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
-          </div>
+          </div> -->
           <button class="pets__btn seemore">Смотреть больше</button>
         </div>
       </section>
@@ -188,7 +228,7 @@
         <div class="container">
           <h2 class="team__title title-2">Наша команда</h2>
           <p class="team__subtitle">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
-          <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide" id="splide-team" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
@@ -239,8 +279,8 @@
                       <source media="(min-width: 768px)" srcset="./img/foto-tablet.png 1x, ./img/foto-tablet@2x.png 2x">
                       <img class="team__slider-img" src="./img/foto-mobile.png" srcset="./img/foto-mobile@2x.png 2x" alt="Член команды">
                     </picture>
-                    <p class="team__slider-title">Серёжа Попов</p>
-                    <p class="team__slider-prof">Основатель питомника</p>
+                    <p class="team__slider-title">Максим Пручкин</p>
+                    <p class="team__slider-prof">Бекэнд-разработчик</p>
                     <p class="team__slider-desk">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного Вами питомца</p>
                     <ul class="team__social-list">
                       <li class="team__social-item">
@@ -277,8 +317,8 @@
                       <source media="(min-width: 768px)" srcset="./img/foto-tablet.png 1x, ./img/foto-tablet@2x.png 2x">
                       <img class="team__slider-img" src="./img/foto-mobile.png" srcset="./img/foto-mobile@2x.png 2x" alt="Член команды">
                     </picture>
-                    <p class="team__slider-title">Серёжа Попов</p>
-                    <p class="team__slider-prof">Основатель питомника</p>
+                    <p class="team__slider-title">Кирилл Иевлев</p>
+                    <p class="team__slider-prof">Помощник прокурора</p>
                     <p class="team__slider-desk">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного Вами питомца</p>
                     <ul class="team__social-list">
                       <li class="team__social-item">
@@ -346,14 +386,15 @@
       <section class="reviews">
         <div class="container">
           <h2 class="reviews__title title-2">Отзывы</h2>
+          <button class="reviews__scroll" type="button">Листай</button>
           <div class="reviews__slider">
             <ul class="reviews__slider-list">
-              <li class="reviews__slider-item reviews__slider-item--active">
+              <li class="reviews__slider-item">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1150px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1240px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="./img/people-tablet.webp 1x, ./img/people-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="./img/people-mobile.webp 1xb, ./img/people-mobile@2x.webp 2x">
-                    <source media="(min-width: 1150px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
+                    <source media="(min-width: 1240px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="./img/people-tablet.png 1x, ./img/people-tablet@2x.png 2x">
                     <img class="reviews__img" src="./img/people-mobile.png" srcset="./img/people-mobile@2x.png 2x" alt="Комментатор">
                   </picture>
@@ -381,10 +422,10 @@
               </li>
               <li class="reviews__slider-item">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1240px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/people-tablet.webp 1x, ./img/people-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/people-mobile.webp 1xb, ./img/people-mobile@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
+                  <source media="(min-width: 1240px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="./img/people-tablet.png 1x, ./img/people-tablet@2x.png 2x">
                   <img class="reviews__img" src="./img/people-mobile.png" srcset="./img/people-mobile@2x.png 2x" alt="Комментатор">
                 </picture>
@@ -412,10 +453,10 @@
             </li>
             <li class="reviews__slider-item">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1240px)" srcset="./img/people-desktop.webp 1x, ./img/people-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/people-tablet.webp 1x, ./img/people-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="./img/people-mobile.webp 1xb, ./img/people-mobile@2x.webp 2x">
-                <source media="(min-width: 1150px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
+                <source media="(min-width: 1240px)" srcset="./img/people-desktop.png 1x, ./img/people-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="./img/people-tablet.png 1x, ./img/people-tablet@2x.png 2x">
                 <img class="reviews__img" src="./img/people-mobile.png" srcset="./img/people-mobile@2x.png 2x" alt="Комментатор">
               </picture>
@@ -441,10 +482,11 @@
               </ul>
             </div>
           </li>
-            </ul>
+        </ul>
             <button class="reviews__slider-button reviews__slider-button--prev" type="button" aria-label="Предыдущий слайд"></button>
             <button class="reviews__slider-button reviews__slider-button--next" type="button" aria-label="Следующий слайд"></button>
           </div>
+          <div class="reviews__seemore seemore">Показать больше</div>
         </div>
       </section>
     </main>
@@ -480,6 +522,28 @@
         <img src="./img/logo-icon.svg" width="56" height="25" alt="Логотип питомника Мейн-Кунов">
       </a>
     </footer>
-    <script type="module" src="./js/script.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script>
+      new Splide( '#splide-gallary', {
+        pagination: false,
+        rewind: true,
+        speed: 1000,
+        rewindSpeed: 1500,
+        mediaQuery: 'min',
+        breakpoints: {
+          1150: {
+            destroy: true,
+          },
+        }
+      }).mount();
+
+      new Splide( '#splide-team', {
+        rewind: true,
+        pagination: false,
+        speed: 1000,
+        rewindSpeed: 1500,
+      }).mount();
+    </script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

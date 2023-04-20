@@ -20,7 +20,15 @@
 }
 
 .slider__img {
+  display: block;
+  max-width: 474px;
+  margin: 0 auto;
 
+  @media (min-width: $desktop) {
+    display: grid;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .slider__button {

@@ -47,9 +47,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "dependencies": {
-    "@splidejs/splide": "^4.1.4",
-    "normalize.css": "^8.0.1"
-  }
+  "type": "module"
 }

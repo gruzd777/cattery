@@ -31,13 +31,9 @@
 .team__slider-item {
   position: relative;
   background-color: $light_back;
-  display: none;
   padding: 88px 11px 16px 11px;
+  margin-top: 70px;
   box-sizing: border-box;
-}
-
-.team__slider-item--active {
-  display: block;
 }
 
 .team__slider-img {
@@ -49,10 +45,11 @@
 
 .team__slider-title {
   font-weight: 500;
+  text-align: center;
   font-size: 18px;
   line-height: 21px;
   color: $basic_gold;
-  max-width: 125px;
+  max-width:160px;
   margin: 0 auto 12px;
 }
 
@@ -122,7 +119,7 @@
 
 @media (min-width: $tablet) {
   .team {
-    padding: 80px 40px 215px;
+    padding: 80px 40px 115px;
   }
 
   .team__title {
@@ -140,26 +137,39 @@
   }
 
   .team__slider-item {
-    padding: 70px 105px 70px 95px;
-    width: 600px;
+    padding: 70px 105px 70px 70px;
+    width: 650px;
     margin: 0 auto;
+    background-color: inherit;
 
     &::before {
-      content:'';
+      content: "";
       position: absolute;
-      top: -25px;
-      left: -25px;
-      width: calc(100% + 50px);
-      height: calc(100% + 50px);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-color: transparent;
-      border: 0.5px solid $basic_gold;
+      border: 0.5px solid #a07b50;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      width: calc(100% - 50px);
+      height: calc(100% - 50px);
+      background-color: $light_back;
+      z-index: -1;
     }
   }
 
   .team__slider-title {
     font-size: 24px;
     line-height: 28px;
-    width: 190px;
+    width: 250px;
     max-width: 100%;
     margin: 0 0 10px 0;
     text-align: left;
@@ -169,7 +179,7 @@
     font-size: 16px;
     line-height: 22px;
     max-width: 100%;
-    width: 200px;
+    width: 250px;
     margin: 0 0 25px 0;
     text-align: left;
   }
@@ -180,7 +190,7 @@
     max-width: 100%;
     margin: 0 0 40px 0;
     text-align: left;
-    width: 400px;
+    width: 340px;
   }
 
   .team__social-list {
@@ -189,11 +199,11 @@
   }
 
   .team__slider-img {
-    top: auto;
+    top: 25px;
     left: auto;
     bottom: 0;
-    right: 0;
-    transform: translate(-20%, 50%);
+    right: 25px;
+    transform: none;
   }
 
   .team__slider-button--prev {
