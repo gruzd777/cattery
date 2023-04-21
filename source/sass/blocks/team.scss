@@ -13,7 +13,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 140%;
-  margin: 0 auto 103px;
+  margin: 0 auto 40px;
   max-width: 255px;
   text-align: center;
 }
@@ -101,11 +101,15 @@
   cursor: pointer;
 }
 
+.team__slider-button svg {
+  display: none;
+}
+
 .team__slider-button--prev {
   background-image: url('../img/arrowPrev.svg');
   background-repeat: no-repeat;
   background-position: center;
-  top: -16px;
+  top: 70px;
   left: 15%;
 }
 
@@ -113,13 +117,13 @@
   background-image: url('../img/arrowNext.svg');
   background-repeat: no-repeat;
   background-position: center;
-  top: -16px;
+  top: 70px;
   right: 15%;
 }
 
 @media (min-width: $tablet) {
   .team {
-    padding: 80px 40px 115px;
+    padding: 80px 2b0px 115px;
   }
 
   .team__title {
@@ -207,18 +211,16 @@
   }
 
   .team__slider-button--prev {
-    top: auto;
-    left: 350px;
-    bottom: -100px;
+    top: 50%;
+    left: 0;
     width: 16px;
     height: 30px;
     background-image: url('../img/arrowPrevTablet.svg');
   }
 
   .team__slider-button--next {
-    top: auto;
-    bottom: -100px;
-    right: 55px;
+    top: 50%;
+    right: 0;
     width: 16px;
     height: 30px;
     background-image: url('../img/arrowNextTablet.svg');

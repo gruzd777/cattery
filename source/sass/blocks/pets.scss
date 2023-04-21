@@ -50,6 +50,35 @@
   margin-top: 30px;
 }
 
+.pets__slider-button {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pets__slider-button svg {
+  display: none;
+}
+
+.pets__slider-button--prev {
+  background-image: url('../img/arrowPrev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 0;
+}
+
+.pets__slider-button--next {
+  background-image: url('../img/arrowNext.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  right: 0;
+}
+
 @media (min-width: $tablet) {
   .pets {
     padding-top: 100px;
