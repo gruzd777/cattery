@@ -547,6 +547,13 @@
         <img src="./img/logo-icon.svg" width="56" height="25" alt="Логотип питомника Мейн-Кунов">
       </a>
     </footer>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__button" type="button"></button>
+        <p class="modal__text">Упс! Удивлёны, что ничего не произошло?</p>
+        <p class="modal__text">Не повод расстраиваться. Скоро придёт бекэндер и сделает так, чтобы это работало.</p>
+      </div>
+    </div>
     <script src="./js/splide.min.js"></script>
     <script>
       new Splide( '#splide-gallary', {
@@ -561,11 +568,11 @@
         speed: 1000,
         rewindSpeed: 1500,
         mediaQuery: 'min',
-        breakpoints: {
-          1150: {
-            destroy: true,
-          },
-        }
+        // breakpoints: {
+        //   1240: {
+        //     destroy: true,
+        //   },
+        // }
       }).mount();
 
       new Splide( '#splide-team', {

@@ -21,3 +21,12 @@ answersButtons.forEach((item, index) => {
     item.classList.toggle('answers__btn--closed');
   })
 })
+
+let catList = Array.from(document.querySelectorAll('.pets__button'));
+
+catList.forEach((item) => {
+  item.addEventListener('click', () => {
+    document.querySelector('.pets__button--active').classList.remove('pets__button--active');
+    item.classList.add('pets__button--active');
+  });
+})
