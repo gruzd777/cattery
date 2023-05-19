@@ -109,6 +109,8 @@ const copy = (done) => {
     .pipe(gulp.dest('build/css'));
   gulp.src('source/js/splide.min.js')
     .pipe(gulp.dest('build/js'));
+  gulp.src('source/js/splide.min.js.map')
+    .pipe(gulp.dest('build/js'));
   done();
 }
 
